@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emotion Debugger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-amber"></span>
+    <span class="dot dot-mint"></span>
+    <span class="topbar-title">emotion-debugger.exe</span>
+  </div>
+  <div class="topbar-right">v1.0.0</div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">$ ./run --target=you</p>
+    <h1 class="hero-title">Hissiyotingizni <span class="accent-amber">debug</span> qiling.</h1>
+    <p class="hero-sub">Kodda xato bo'lgani kabi, hissiyotda ham "stack trace" bor. Yozing — tizim tahlil qiladi, sababini topadi va "fix" taklif qiladi.</p>
+  </section>
+
+  <section class="console">
+
+    <div class="panel input-panel">
+      <div class="panel-head">
+        <span class="panel-tab">input.txt</span>
+        <span class="panel-status" id="charCount">0 belgi</span>
+      </div>
+      <div class="editor">
+        <div class="gutter" id="gutter"><span>1</span></div>
+        <textarea id="feelingInput" spellcheck="false" placeholder="Masalan: Ishda charchadim, hamma narsa asabimga tegyapti..."></textarea>
+      </div>
+      <div class="panel-foot">
+        <button class="run-btn" id="runBtn">
+          <span class="run-icon">▶</span> Run Debugger
+        </button>
+      </div>
+    </div>
+
+    <div class="panel output-panel">
+      <div class="panel-head">
+        <span class="panel-tab">terminal</span>
+        <span class="panel-status" id="statusBadge">idle</span>
+      </div>
+      <div class="terminal" id="terminal">
+        <p class="term-line term-muted">$ tizim tayyor. natijani ko'rish uchun "Run Debugger" tugmasini bosing.</p>
+        <span class="cursor" id="idleCursor">█</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="how">
+    <h2>Qanday ishlaydi</h2>
+    <div class="how-grid">
+      <div class="how-item">
+        <span class="how-mark">read()</span>
+        <p>Siz his-tuyg'ularingizni oddiy so'zlar bilan yozasiz — texnik bilim shart emas.</p>
+      </div>
+      <div class="how-item">
+        <span class="how-mark">trace()</span>
+        <p>Tizim matnni tahlil qilib, hissiy "xato turi" va uning sabab zanjirini aniqlaydi.</p>
+      </div>
+      <div class="how-item">
+        <span class="how-mark">fix()</span>
+        <p>Har bir "xato" uchun amaliy, bajarish oson tavsiyalar chiqariladi.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Emotion Debugger — Hack Devengers 1.0</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
