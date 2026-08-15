@@ -61,4 +61,3 @@ Frontend backend orqali avtomatik serve qilinadi (alohida server kerak emas).
 - Ko'p tilli qo'llab-quvvatlash
 
 ## Jamoa
-Hack Devengers 1.0 — [jamoa a'zolarini shu yerga yozing]
